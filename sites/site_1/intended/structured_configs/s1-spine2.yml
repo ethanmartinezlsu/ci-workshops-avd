@@ -85,7 +85,7 @@ vlan_interfaces:
   - App
   description: Twenty
   shutdown: false
-  ip_address: 10.20.20.3/24m
+  ip_address: 10.20.20.3/24
   ip_virtual_router_addresses:
   - 10.20.20.1
 port_channel_interfaces:
