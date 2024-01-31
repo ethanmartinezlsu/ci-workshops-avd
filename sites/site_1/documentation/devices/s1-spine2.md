@@ -408,7 +408,7 @@ interface Loopback0
 | Interface | VRF | IP Address | IP Address Virtual | IP Router Virtual Address | VRRP | ACL In | ACL Out |
 | --------- | --- | ---------- | ------------------ | ------------------------- | ---- | ------ | ------- |
 | Vlan10 |  default  |  10.10.10.3/24  |  -  |  10.10.10.1  |  -  |  -  |  -  |
-| Vlan20 |  default  |  10.20.20.3/24  |  -  |  10.20.20.1  |  -  |  -  |  -  |
+| Vlan20 |  default  |  10.20.20.3/24m  |  -  |  10.20.20.1  |  -  |  -  |  -  |
 | Vlan4093 |  default  |  10.1.254.1/31  |  -  |  -  |  -  |  -  |  -  |
 | Vlan4094 |  default  |  10.1.253.1/31  |  -  |  -  |  -  |  -  |  -  |
 
@@ -425,7 +425,7 @@ interface Vlan10
 interface Vlan20
    description Twenty
    no shutdown
-   ip address 10.20.20.3/24
+   ip address 10.20.20.3/24m
    ip virtual-router address 10.20.20.1
 !
 interface Vlan4093
